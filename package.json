@@ -5,10 +5,14 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon lib/server.js"
+    "start": "nodemon lib/server.js",
+    "k6": "k6 run k6script.js"
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
     "express": "4.17.1",
+    "newrelic": "^6.13.2",
     "nodemon": "2.0.4",
     "path": "0.12.7"
   },
